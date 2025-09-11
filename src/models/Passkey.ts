@@ -1,7 +1,7 @@
 import { Schema, model, Document, Types } from "mongoose";
 
 export interface IPasskey extends Document {
-  username: string;
+  // username: string;
   credentialID: string;
   credentialPublicKey: string; // Buffer;
   webAuthnUserID: string;
@@ -15,10 +15,10 @@ export interface IPasskey extends Document {
 
 const passkeySchema = new Schema<IPasskey>(
   {
-    username: {
-      type: String,
-      required: true,
-    },
+    // username: {
+    //   type: String,
+    //   required: true,
+    // },
     credentialID: {
       type: String,
       required: true,
